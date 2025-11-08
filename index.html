@@ -1,37 +1,220 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="en" data-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Portfolio website for Ethan Becker, Gameplay Programmer.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Becker | Gameplay Programmer</title>
-    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- ==============================
+         META & BASIC SETTINGS
+    =============================== -->
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="Ethan Becker — Gameplay Programmer. Portfolio showcasing gameplay projects, technical skills, and contact info." >
+    <meta name="author" content="Ethan Becker" >
+    <meta name="keywords" content="gameplay programmer, portfolio, Unity, Godot, GitHub, itch.io" >
+
+    <title>Ethan Becker — Gameplay Programmer</title>
+
+    <!-- ==============================
+         STYLES & ICONS
+    =============================== -->
+    <link rel="stylesheet" href="css/portfolio.css" >
+    <link rel="icon" href="favicon.ico" >
 </head>
 <body>
 
-<header>
-    <h1>Ethan Becker: Gameplay Programmer</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- ==============================
+     HEADER
+     (Site identity + top-right links)
+=============================== -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <h1 class="site-title">Ethan Becker</h1>
+            <p class="desired-position">Gameplay Programmer</p>
+        </div>
+
+        <nav class="top-credentials" aria-label="External credentials and contact links">
+            <ul class="credentials-list">
+                <li><a href="https://github.com/d3bSt3p" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://deb-step.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+                <li><a href="https://www.linkedin.com/in/ethan-becker-2068b0363" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="mailto:strongcarpenter09@gmail.com" aria-label="Send email to Ethan Becker">Email</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main>
-    <section class="intro">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello! I’m <strong>Ethan Becker</strong>, a gameplay programmer specializing in creating engaging and responsive player experiences. This site showcases my projects, technical skills, and creative process.</p>
-        <img src="images/ASU-Team-2-WarRoom.jpg" alt="Ethan Becker working on a game project" width="600">
+<!-- ==============================
+     MAIN CONTENT
+=============================== -->
+<main id="main" class="site-main">
+
+    <!-- ==========================
+         HERO / INTRO SECTION
+    =========================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+            <figure class="profile-figure">
+                <img src="images/Portrait_Placeholder.png"
+                     alt="Portrait of Ethan Becker"
+                     class="profile-photo"
+                     width="160" height="160" >
+            </figure>
+
+            <div class="hero-text">
+                <h2 id="hero-heading" class="hero-title">Personal Overview / Hook</h2>
+                <p class="hero-sub">
+                    I design and build engaging gameplay systems and tools.
+                    I turn design ideas into robust, maintainable code, currently seeking to apply my skills in more exciting places!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================
+         PROJECTS / CREDITS SECTION
+    =========================== -->
+    <section id="credits" class="credits-section" aria-labelledby="credits-heading">
+        <h3 id="credits-heading">Credits</h3>
+
+        <div class="projects-grid">
+
+            <!-- Example project card structure -->
+            <a href="placeholder.html" class="project-card">
+                <img src="media/CanvasKingdomCard.gif" alt="Canvas Kingdoms gameplay" class="project-image" >
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span>👥 4</span>
+                        <span>| ⏱ 7 weeks |</span>
+                        <span>🧠 Unity (C#)</span>
+                    </div>
+                    <h3>Canvas Kingdoms (2025)</h3>
+                    <p class="role">Gameplay Programmer / Designer</p>
+                    <p class="description">
+                        3D platformer inspired by Mario 64, featuring a robust kinematic movement system and dynamic level design. First Unity project!
+                    </p>
+                </div>
+            </a>
+
+            <a href="placeholder.html" class="project-card">
+                <img src="media/InfrernoCard.gif" alt="Inferno gameplay" class="project-image" >
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span>👥 7</span>
+                        <span>| ⏱ 8 weeks |</span>
+                        <span>🧠 Gamemaker (GML)</span>
+                    </div>
+                    <h3>Inferno (2024)</h3>
+                    <p class="role">Gameplay Programmer / Designer</p>
+                    <p class="description">
+                        2D action platformer, focused on tight controls and challenging level design, built in GameMaker!
+                    </p>
+                </div>
+            </a>
+
+            <a href="placeholder.html" class="project-card">
+                <img src="media/FishyBuisnessCard.gif" alt="Fishy Business gameplay" class="project-image" >
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span>👥 3</span>
+                        <span>| ⏱ 1 week |</span>
+                        <span>🧠 Godot (GDScript)</span>
+                    </div>
+                    <h3>Fishy Business (2025)</h3>
+                    <p class="role">Gameplay Programmer / Designer</p>
+                    <p class="description">
+                        Top-down action fishing game, featuring a dynamic ecosystem, full of fish you could find in florida waters. Players impact the ecosystem based on their fishing habits!
+                    </p>
+                </div>
+            </a>
+
+            <a href="placeholder.html" class="project-card">
+                <img src="media/PictureGeistCard.gif" alt="Echo Core gameplay" class="project-image" >
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span>👥 5</span>
+                        <span>| ⏱ 24 hours |</span>
+                        <span>🧠 Unity (C#)</span>
+                    </div>
+                    <h3>Echo Core (2023)</h3>
+                    <p class="role">Gameplay Programmer / Designer</p>
+                    <p class="description">
+                        First person puzzle horror game, where players use a haunted camera to find objects stolen from the corporeal world. Built in 24 hours for the Uniting The Valley hackathon, winning 2nd place!
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==========================
+         TECHNICAL EXPERIENCE
+    =========================== -->
+    <section id="technical" class="technical-section" aria-labelledby="technical-heading">
+        <h3 id="technical-heading">Technical Experience</h3>
+
+        <figure class="skills-table-figure">
+            <table class="skills-table">
+                <caption>Game Engine Proficiencies</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Projects</th>
+                    <th scope="col">Proficiency</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Unity / C#</td>
+                    <td>3</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Godot / GDScript</td>
+                    <td>4</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>Unreal / C++</td>
+                    <td>1</td>
+                    <td>Intermediate</td>
+                </tr>
+                </tbody>
+            </table>
+        </figure>
+    </section>
+
+    <!-- ==========================
+         ABOUT / PERSONAL OVERVIEW
+    =========================== -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+        <h3 id="about-heading">Hello, nice to meet you!</h3>
+        <p>
+            A larger overview of myself, my journey, and a gentle prompt to contact me.
+            You can reach me via the links above and below!
+        </p>
     </section>
 </main>
 
-<footer>
-    <p>© 2025 Ethan Becker | <a href="https://itch.io/profile/deb-step" target="_blank">Visit my Itch.io</a></p>
+<!-- ==============================
+     FOOTER
+=============================== -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>&copy; <span id="year"></span> Ethan Becker | Gameplay Programmer</p>
+        <p class="footer-contacts">
+            <a href="mailto:strongcarpenter09@gmail.com">Email</a> |
+            <a href="https://github.com/d3bSt3p" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://deb-step.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a>
+        </p>
+    </div>
 </footer>
+
+<!-- ==============================
+     SCRIPTS
+=============================== -->
+<script>
+    // Dynamically set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
