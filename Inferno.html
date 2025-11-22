@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="Ethan Becker — Gameplay Programmer. Portfolio showcasing gameplay projects, technical skills, and contact info.">
+    <meta name="author" content="Ethan Becker" >
+    <meta name="keywords" content="gameplay programmer, portfolio, Unity, Godot, GitHub, itch.io" >
+
+    <title>Ethan Becker — Inferno</title>
+
+    <!-- Link to your CSS (you said CSS is handled) -->
+    <link rel="stylesheet" href="css/portfolio.css" >
+
+    <!-- Optional: favicon -->
+    <link rel="icon" href="favicon.ico" >
+</head>
+<body>
+
+<!-- HEADER (site identity + top-right external credentials & contact) -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <h1 class="site-title">Ethan Becker</h1>
+            <p class="desired-position">Gameplay Programmer</p>
+        </div>
+
+        <nav class="top-credentials" aria-label="Top credentials and contact">
+            <!-- External links requirement -->
+            <ul class="credentials-list">
+                <li><a href="https://github.com/d3bSt3p" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://deb-step.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+                <li><a href="https://www.linkedin.com/in/ethan-becker-2068b0363" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <!-- Email link requirement -->
+                <li><a href="mailto:strongcarpenter09@gmail.com" aria-label="Send email to Ethan Becker">Email</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="project-page container">
+
+    <!-- Back Link -->
+    <h3 class="back-link">
+        <a class="btn-link" href="index.html">◀ Back</a>
+    </h3>
+
+    <!-- Gameplay GIF + Title -->
+    <section class="project-hero">
+        <div class="hero-media">
+            <img src="media/InfrernoCard.gif" alt="Gameplay GIF">
+        </div>
+        <h2 class="project-title">Placeholder</h2>
+    </section>
+
+    <!-- Two-Column Boxes (About + Project Info) -->
+    <section class="project-info-grid">
+        <div class="info-box">
+            <h3>About</h3>
+            <p> What if Mega Man, Castlevania and Hades all walked into a bar together?
+                Then they fell into limbo, and their only way out was to descend further
+                into all 9 circles of hell to kill Satan… or become him</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Project Info</h3>
+            <p>
+            <span>👥 7</span>
+            <span>| ⏱ 8 weeks |</span>
+            <span>🧠 Gamemaker (GML)</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Full-Width Content Sections -->
+    <section class="project-sections">
+
+        <!-- INTRO -->
+        <article class="section-block">
+            <h3>Introduction</h3>
+            <p>Inferno is a challenging 2D, side-scrolling, action        	platformer that pits the player against the legions of Hell.
+
+                Following Dante’s Inferno, the netherworld is a mix of Greek, Roman, and Abrahamic mythologies. You have not practiced sin nor virtue while alive. Whether burdened by regret, guilt, or external circumstance, you simply coast through life, ignoring what it meant to live. Consequently, in death, you are ignored, tossed into Limbo and beneath the waters of the Styx to be eternally forgotten. It is from this darkness where you must escape and journey through the 9 circles of Hell to acquire a second chance at life.
+
+                The challenge within the game is shared between platforming and combat encounters. Initially equipped with a sword of flame, traverse through each level unlocking more combat and movement abilities as you progress deeper through Hell. Battle enemies, learning their mechanics, so that they’ll no longer hinder and potentially aid you on the treacherous path. With enemy variety and platform mechanics tied to their respective circle of Hell, a cast of sinners and demons to meet throughout the journey, and boss fights / gatekeepers placed every 3 layers, the player will be constantly presented with new challenges and gameplay to interact with.
+
+                Blending action platforming with a horror setting, Inferno has the player constantly feeling a sense of unease and danger tempered by a sense of accomplishment in overcoming a challenge. Following the themes of the story, the game tests the players’ ambition and how far it will take them.
+            </p>
+
+
+        </article>
+
+        <!-- TECHNICAL OVERVIEW -->
+        <article class="section-block">
+            <h3>Technical Overview</h3>
+            <div class="tech-overview">
+                <h4>Lives &amp; Checkpoints</h4>
+                <p>Players have a pool of lives that persist between checkpoints (one placed between each circle). If lives reach zero, the player returns to the beginning.</p>
+
+                <h4>Spoils of Hell: Soul Coins, Shops, Items, Mana</h4>
+                <ul>
+                    <li><strong>Soul Coins</strong> — Currency used to purchase items and services in shops.</li>
+                    <li><strong>Shops</strong> — Buy extra lives, items, and temporary stat boosts (health recovery, heart containers, shields, damage buffs).</li>
+                    <li><strong>Buffs &amp; Debuffs</strong> — Consumables and effects, e.g. damage‑boost potions, mana‑cost reductions, temporary armor that absorbs damage.</li>
+                    <li>
+                        <strong>Items</strong> — Found in levels or purchased; only one item can be held at a time. Examples:
+                        <ul>
+                            <li>Hermes Boots — Grants a dash and negates fall damage (double tap a / d).</li>
+                            <li>Icarus Wings — Grants double jump and negates fall damage (double tap Space).</li>
+                            <li>Hades Chains — Grappling hook that deals minor damage.</li>
+                            <li>Poseidon’s Trident — Javelin projectile attack.</li>
+                            <li>Athena’s Aegis Shield — Block incoming damage.</li>
+                            <li>Explosive Potion — Throwable explosive that damages on impact.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mana</strong> — Earned by defeating enemies and required for stronger abilities. The player starts with a full mana bar on each new life.</li>
+                </ul>
+
+                <h4>Attacking (Lucifer’s Flame Sword)</h4>
+                <p>This legendary sword harnesses souls. Charge the sword to unleash a powerful wave of flame.</p>
+                <ul>
+                    <li><strong>Basic attack</strong> — Slash (Left Mouse)</li>
+                    <li><strong>Special / Charged attack</strong> — Projectile fire wave (Right Mouse)</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- DESIGN OVERVIEW -->
+        <article class="section-block">
+            <h3>Level Design Overview</h3>
+            <p>
+                Game moves through the 9 circles of hell, and includes two unique boss fights (each ~10–15 minutes).
+            </p>
+            <!-- Three images in a row -->
+            <div class="image-row three-images">
+                <img src="images/inferno_levelsA.png" alt="Example Image 1">
+                <img src="images/inferno_levelsB.png" alt="Example Image 2">
+                <img src="images/inferno_levelsC.png" alt="Example Image 3">
+            </div>
+
+            <ol class="circles" aria-label="Circles of Hell overview">
+                <li>
+                    <h4>Limbo — Tutorial / Hub World</h4>
+                    <ul>
+                        <li>Introduce character, story and controls</li>
+                        <li>Ascending, vertical rooms that teach movement</li>
+                        <li>Small NPC interactions to set tone</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Lust — Platforming Tutorial</h4>
+                    <ul>
+                        <li>Platforming-focused layouts (canyon-esque, horizontal)</li>
+                        <li>Wind mechanic: directional winds that affect player movement</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Gluttony — Combat Tutorial</h4>
+                    <ul>
+                        <li>Cave-like spaces for tight platforming</li>
+                        <li>Close, personal enemy encounters and hazard teachables</li>
+                        <li>Cerberus boss fight</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Greed</h4>
+                    <ul>
+                        <li>Desolate battlefield with arena-style encounters</li>
+                        <li>Overabundance of coins that create negative effects</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Wrath</h4>
+                    <ul>
+                        <li>Cascading mud falls and hazardous lagoons</li>
+                        <li>Sticky/quicksand mechanics; avoid prolonged exposure</li>
+                        <li>Higher cost for lives in this region</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Heresy — City of Dis</h4>
+                    <ul>
+                        <li>Castle walls and cramped, dungeon-like layouts</li>
+                        <li>Furies boss fight; flaming coffin hazards</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Violence</h4>
+                    <ul>
+                        <li>Sections representing violence against others and oneself</li>
+                        <li>Arena: 3–4 gladiator minibosses with access to acquired items</li>
+                        <li>Mimic miniboss that mirrors player loadout and upgrades</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Fraud</h4>
+                    <ul>
+                        <li>Trickery and deceptive encounters that test player judgement</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h4>Treachery — Frozen Lake & Final Challenge</h4>
+                    <ul>
+                        <li>Frozen lake with ice mechanics and environmental hazards</li>
+                        <li>Combines all prior platforming and combat mechanics</li>
+                        <li>The FINAL BOSS: culmination of the journey and systems</li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+
+        <!-- WHAT I LEARNED -->
+        <article class="section-block">
+            <h3>What I Learned</h3>
+            <p>First large project with a large team. Learning to clearly communicate ideas, and have clean and readable code
+                was essensial for sucsess. Spent alot of time working on the design document, and making it readable and maintainable.
+                First project I used github for. Studied old school castlevania games.
+                check out our teams postmortem!
+
+            </p>
+            <iframe width="900" height="400" src="https://www.youtube.com/embed/qGNGYg_FePg" title="Inferno Gameplay and Postmortem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+    <p>© 2025 Ethan Becker</p>
+</footer>
+</body>
+</html>
