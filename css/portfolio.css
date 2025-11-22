@@ -429,3 +429,146 @@ footer {
         max-width: 200px;
     }
 }
+/* =========================================================
+   PROJECT PAGE — WIREFRAME IMPLEMENTATION
+   Matches portfolio.css theme + layout conventions
+   ========================================================= */
+
+.project-page {
+    padding: 3rem 0;
+}
+
+/* Back link */
+.back-link {
+    margin-bottom: 1rem;
+}
+
+/* -------------------------------
+   HERO / GAMEPLAY GIF
+---------------------------------- */
+.project-hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-media {
+    width: 100%;
+    max-width: 1100px;
+    height: 350px;
+    margin: 0 auto;
+    background: var(--secondary);
+    border: 2px solid var(--accent);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+/* -------------------------------
+   ABOUT + PROJECT INFO GRID
+---------------------------------- */
+.project-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.info-box {
+    background: var(--secondary);
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow-md);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+}
+
+.info-box h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+    .project-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -------------------------------
+   LONG SCROLL SECTIONS
+---------------------------------- */
+.project-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.section-block {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.section-block h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+/* =========================================================
+   IMAGE ROWS FOR PROJECT SECTIONS
+   ========================================================= */
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--secondary);
+}
+
+/* Two images: each gets 50% */
+.image-row.two-images img {
+    flex: 1 1 calc(50% - 1rem);
+}
+
+/* Three images: each gets 33% */
+.image-row.three-images img {
+    flex: 1 1 calc(33.33% - 1rem);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 100%;
+        flex: none;
+    }
+}
+
+
