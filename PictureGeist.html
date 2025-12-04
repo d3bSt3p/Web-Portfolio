@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="description" content="Ethan Becker — Gameplay Programmer. Portfolio showcasing gameplay projects, technical skills, and contact info.">
+    <meta name="author" content="Ethan Becker" >
+    <meta name="keywords" content="gameplay programmer, portfolio, Unity, Godot, GitHub, itch.io" >
+
+    <title>Ethan Becker — Picture Geist</title>
+
+    <!-- Link to your CSS (you said CSS is handled) -->
+    <link rel="stylesheet" href="css/portfolio.css" >
+
+    <!-- Optional: favicon -->
+    <link rel="icon" href="images/PortfolioHero.png" >
+</head>
+<body>
+
+<!-- HEADER (site identity + top-right external credentials & contact) -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <h1 class="site-title">Ethan Becker</h1>
+            <p class="desired-position">Gameplay Programmer</p>
+        </div>
+
+        <nav class="top-credentials" aria-label="Top credentials and contact">
+            <!-- External links requirement -->
+            <ul class="credentials-list">
+                <li><a href="https://github.com/d3bSt3p" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://deb-step.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+                <li><a href="https://www.linkedin.com/in/ethan-becker-2068b0363" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <!-- Email link requirement -->
+                <li><a href="mailto:strongcarpenter09@gmail.com" aria-label="Send email to Ethan Becker">Email</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="project-page container">
+
+    <!-- Back Link -->
+    <h3 class="back-link">
+        <a class="btn-link" href="index.html">◀ Back</a>
+    </h3>
+
+    <section class="project-hero">
+        <div class="hero-media">
+            <video
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="media/PictureGeistCard.gif"
+                    style="width:100%; border-radius:12px; border:3px solid var(--accent);"
+                    aria-label="Preview video of Canvas Kingdoms gameplay">
+                <source src="media/PictureGeistVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag. You can
+                <a href="media/PictureGeistVideo.mp4" class="btn-link" download>download the demo video</a>.
+            </video>
+        </div>
+        <h2 class="project-title">Picture Geist</h2>
+    </section>
+
+    <!-- Two-Column Boxes (About + Project Info) -->
+    <section class="project-info-grid">
+        <div class="info-box">
+            <h3>About</h3>
+            <p>My teams submission for the Uniting the valley hackathon, where it placed second!</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Project Info</h3>
+            <p>
+                <span>👥 5</span>
+                <span>| ⏱ 24 hours |</span>
+                <span>🧠 Unity (C#)</span></p>
+        </div>
+    </section>
+
+    <!-- Full-Width Content Sections -->
+    <section class="project-sections">
+
+        <!-- INTRO -->
+        <article class="section-block">
+            <h3>Introduction</h3>
+            <p>Players explore an abandoned mansion to find 5 haunted objects, before they go insane. They must identify haunted objects by looking through their camera to discover hidden items, and observe ghost behaviour.</p>
+
+
+        </article>
+
+        <!-- TECHNICAL OVERVIEW -->
+        <article class="section-block">
+            <h3>Technical Overview</h3>
+            <p>The camera and the Ghost. Certain objects aren't visible unless you are looking through your camera. When the main game scene is loaded, every object has a chance to become a "haunted object". Once 5 are selected the scene finishes loading and the player has 3 minutes to find each of them</p>
+
+            <!-- Three images in a row -->
+            <div class="image-row three-images">
+                <img src="images/PGnone.png" alt="Example Image 1">
+                <img src="images/PGcamera.png" alt="Example Image 2">
+                <img src="images/PGbook.png" alt="Example Image 3">
+            </div>
+        </article>
+
+        <!-- DESIGN OVERVIEW -->
+        <article class="section-block">
+            <h3>Design Overview</h3>
+            <p>Theme of the Hackathon was "Creepy", so my main focus was making the game constantly build tension. One way was with our ghost Jacob, a friendly ghost that like the rest of the things trapped in the spirit realm can only be seen through the lens of the camera. They are a friendly ghost that will help the player by moving from haunted object to haunted object. But be careful, as the players sanity gets lower, Jacob will get confused and think that the player is a haunted object, making it more difficult to take clear photos.</p>
+        </article>
+
+        <!-- WHAT I LEARNED -->
+        <article class="section-block">
+            <h3>What I Learned</h3>
+            <p>This game was a great way for me to test my skills in unity! I had alot of fun working on the level for the game, and coming up with the core loop of the game. It was a great exercise in creating a good vertical slice in a short time frame!</p>
+        </article>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+    <p>© 2025 Ethan Becker</p>
+</footer>
+</body>
+</html>
