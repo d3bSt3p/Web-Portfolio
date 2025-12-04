@@ -38,10 +38,134 @@
         </nav>
     </div>
 </header>
-<main>
-    <h3 id="credits-heading"><a href="index.html"> Back </a></h3>
-    <h3> Canvas Kingdoms</h3>
+<main class="project-page container">
+
+    <!-- Back Link -->
+    <h3 class="back-link">
+        <a class="btn-link" href="index.html">◀ Back</a>
+    </h3>
+
+    <!-- Gameplay GIF + Title -->
+    <section class="project-hero">
+        <div class="hero-media">
+            <img src="media/CanvasKingdomCard.gif" alt="Canvas Kingdoms Gameplay GIF">
+        </div>
+        <h2 class="project-title">Canvas Kingdoms</h2>
+    </section>
+
+    <!-- Two-Column Boxes (About + Project Info) -->
+    <section class="project-info-grid">
+        <div class="info-box">
+            <h3>About</h3>
+            <p>You’re a princess, and you’re done waiting for a prince to come rescue you. You’ve been lost in your paintings for far too long. But it’s a long journey out… will you be able to make it?</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Project Info</h3>
+            <p>
+
+                    <span>👥 4</span>
+                    <span>| ⏱ 7 weeks |</span>
+                    <span>🧠 Unity (C#)</span>
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Full-Width Content Sections -->
+    <section class="project-sections"><h2 class="section-heading">Project Sections</h2>
+        <h2 class="section-heading">Project Sections</h2>
+        <!-- INTRO -->
+        <article class="section-block">
+            <h3>Introduction</h3>
+            <p>
+                This game has fairly standard platformer controls.
+                The player will enter paintings and be transported to the worlds they see depicted.
+                From there, they must jump across a series of platforms and obstacles
+                to collect lost paintbrushes, pigments, or pieces of her own artwork.
+                The princess uses what she finds to complete paintings,
+                revealing new areas in the castle, maybe even a way out!
+            </p>
+
+        </article>
+
+        <!-- TECHNICAL OVERVIEW -->
+        <article class="section-block">
+            <h3>3D Platformer Character Controller</h3>
+<div class="controller-features">
+    <section class="feature">
+        <h4>Walking</h4>
+        <p>Players can move through the world using W / A / S / D.</p>
+    </section>
+
+    <section class="feature">
+        <h4>High Jump</h4>
+        <p>Press jump while crouched to perform a super jump.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Variable Jump Height</h4>
+        <p>Holding the jump button longer results in a higher jump.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Crouch</h4>
+        <p>Press Ctrl to crouch, reducing the player's height to dodge hazards and move under obstacles.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Long Jump</h4>
+        <p>While moving, crouch and jump at the same time to gain a burst of directional movement.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Animation, SFX &amp; VFX</h4>
+        <p>All actions are animated with sound effects. VFX are colorful paint bursts to make movement feel responsive and fair.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Drop Shadow</h4>
+        <p>A shadow directly below the player helps gauge where they will land.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Coyote Time &amp; Jump Buffering</h4>
+        <p>Coyote time: allow a short window to jump after leaving a platform. Jump buffering: queue a jump pressed slightly before landing to execute on touchdown.</p>
+    </section>
+
+    <section class="feature">
+        <h4>Terminal Velocity</h4>
+        <p>Max horizontal/vertical speeds vary by state (falling &gt; jumping &gt; walking/sprinting).</p>
+    </section>
+</div>
+
+        </article>
+
+        <!-- DESIGN OVERVIEW -->
+        <article class="section-block">
+            <h3>Design Overview</h3>
+            <p>Inspired by disney movies and old cgi barbie movies,
+                players will explore fantastical fantasy locations,
+                each inspired by iconic fairy tale stories. The castle is dark and oppressive,
+                while the paintings are vibrant and surreal, creating a stark contrast.
+                Each painting is a unique, self-contained world with its own art style, physics,
+                and platforming challenges</p>
+        </article>
+
+        <!-- WHAT I LEARNED -->
+        <article class="section-block">
+            <h3>What I Learned</h3>
+            <p>This game was my first unity game, as well as my first game using 3D! I spent alot of time
+            getting to know how the unity physics engine works, as well as how to take some control back from it
+            for satisfying gameplay. during development my goal was to make my code as reusable as possible,
+            which taught me a new way of thinking while I was developing the game</p>
+        </article>
+
+    </section>
+
 </main>
+
+
 <footer>
     <p>© 2025 Ethan Becker</p>
 </footer>
