@@ -411,8 +411,153 @@ footer {
 }
 
 /* ===============================
-   RESPONSIVE DESIGN
-   =============================== */
+   FEEDBACK FORM SECTION
+============================== */
+.feedback-section {
+    margin: 3rem auto 0;
+    max-width: var(--max-width);
+    padding: 0 2rem;
+}
+
+.feedback-form {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 1.75rem 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--accent);
+    box-shadow: var(--shadow-md);
+}
+
+.feedback-fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.feedback-row--rating {
+    grid-template-columns: 3fr 2fr;
+}
+
+.feedback-row:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.feedback-row label {
+    font-weight: 500;
+}
+
+.feedback-scale-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+}
+
+.feedback-scale-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+}
+
+.feedback-scale-labels span {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.feedback-scale {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.feedback-scale input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.feedback-scale label {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 999px;
+    border: 2px solid var(--accent);
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.feedback-scale input[type="radio"]:focus-visible + label,
+.feedback-scale input[type="radio"]:checked + label {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.feedback-select {
+    width: 100%;
+    padding: 0.45rem 0.6rem;
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+}
+
+:root[data-theme="dark"] .feedback-select {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.feedback-select:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.feedback-actions {
+    margin-top: 1.75rem;
+    text-align: right;
+}
+
+.feedback-submit {
+    padding: 0.4rem 1.4rem;
+    background: transparent;
+    color: var(--accent);
+    border-radius: 999px;
+    border: 2px solid var(--accent);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.feedback-submit:hover,
+.feedback-submit:focus-visible {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 @media (max-width: 700px) {
     .hero-section {
@@ -428,7 +573,26 @@ footer {
         margin: 0 auto;
         max-width: 200px;
     }
+
+    .feedback-row,
+    .feedback-row--rating {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+    }
+
+    .feedback-scale {
+        justify-content: flex-start;
+    }
+
+    .feedback-section {
+        padding: 0 1rem;
+    }
+
+    .feedback-form {
+        padding: 1.25rem 1.25rem 1.5rem;
+    }
 }
+
 /* =========================================================
    PROJECT PAGE — WIREFRAME IMPLEMENTATION
    Matches portfolio.css theme + layout conventions
@@ -569,5 +733,3 @@ footer {
         flex: none;
     }
 }
-
-
