@@ -45,14 +45,25 @@
         <a class="btn-link" href="index.html">◀ Back</a>
     </h3>
 
-    <!-- Gameplay GIF + Title -->
     <section class="project-hero">
         <div class="hero-media">
-            <img src="media/CanvasKingdomCard.gif" alt="Canvas Kingdoms Gameplay GIF">
+            <video
+                    controls
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="media/CanvasKingdomCard-poster.png"
+                    style="width:100%; border-radius:12px; border:3px solid var(--accent);"
+                    aria-label="Preview video of Canvas Kingdoms gameplay">
+                <source src="media/CanvasKingdomsVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag. You can
+                <a href="media/CanvasKingdomCard.mp4" class="btn-link" download>download the demo video</a>.
+            </video>
         </div>
         <h2 class="project-title">Canvas Kingdoms</h2>
     </section>
-
     <!-- Two-Column Boxes (About + Project Info) -->
     <section class="project-info-grid">
         <div class="info-box">
@@ -73,8 +84,8 @@
     </section>
 
     <!-- Full-Width Content Sections -->
-    <section class="project-sections"><h2 class="section-heading">Project Sections</h2>
-        <h2 class="section-heading">Project Sections</h2>
+    <section class="project-sections"><h2 class="section-heading"></h2>
+        <h2 class="section-heading"></h2>
         <!-- INTRO -->
         <article class="section-block">
             <h3>Introduction</h3>
